@@ -443,7 +443,7 @@ async function startthread(targetURL, browserProxy, task, done, retries = 0) {
             
             try {
                 spawn("node", [
-                    "tes.js",
+                    "flooder.js",
                     targetURL,
                     duration, 
                     thread,
@@ -516,5 +516,6 @@ main().catch(err => {
     colored(colors.COLOR_RED, "[ERROR] Main function error: " + err.message);
     process.exit(1)
 });
+
 
 
